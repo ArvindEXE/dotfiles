@@ -1,3 +1,0 @@
-[2022-03-08 13:07:49.911] [renderer1] [info] IExtensionHostStarter.start() took 7 ms.
-[2022-03-08 13:07:50.061] [renderer1] [error] [Extension Host] (node:1860) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `codium --trace-deprecation ...` to show where the warning was created)
