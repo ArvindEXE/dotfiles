@@ -1,0 +1,8 @@
+[2022-03-07 20:21:48.580] [main] [info] update#setState idle
+[2022-03-07 20:21:48.592] [main] [info] ExtensionHostStarterWorker created
+[2022-03-07 20:21:49.306] [main] [info] Starting extension host with pid 24942 (fork() took 18 ms).
+[2022-03-07 20:21:49.306] [main] [info] ExtensionHostStarterWorker.start() took 20 ms.
+[2022-03-07 20:22:18.581] [main] [info] update#setState checking for updates
+[2022-03-07 20:22:18.611] [main] [info] update#setState available for download
+[2022-03-07 21:32:09.756] [main] [info] Extension host with pid 24942 exited with code: null, signal: SIGTERM.
+[2022-03-07 21:32:09.821] [main] [error] CodeWindow: renderer process crashed (reason: killed, code: 15)

@@ -1,0 +1,130 @@
+#Variables
+set $mod Mod4
+set $alt Mod1
+
+#Settings
+font pango:Fira Code 10
+gaps inner 5
+smart_gaps on
+smart_gaps inverse_outer
+smart_borders on
+smart_borders no_gaps
+hide_edge_borders smart_no_gaps
+new_window normal 0 px
+new_window none
+default_border none
+
+# Auto Start
+exec --no-startup-id dex --autostart --environment i3
+exec_always --no-startup-id picom -b
+exec_always --no-startup-id /usr/bin/alternating_layouts.py
+exec_always --no-startup-id redshift -x && redshift
+exec_always --no-startup-id killall dunst; dunst
+exec_always --no-startup-id feh --bg-fill -r -z ~/Pictures/wallpapers
+exec_always --no-startup-id $HOME/.config/polybar/launch2.sh
+
+#Apps
+bindsym $mod+Return exec kitty
+bindsym $mod+F exec thunar
+bindsym $mod+B exec librewolf
+bindsym $mod+r exec --no-startup-id rofi -show drun
+
+
+#ScreenShot
+bindsym Print exec --no-startup-id flameshot gui
+
+#Hardware
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +5
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -5
+
+#Window Management
+bindsym $mod+q kill
+floating_modifier $mod
+bindsym $alt+Tab focus next
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+bindsym $mod+Prior fullscreen toggle
+bindsym $mod+y floating toggle
+bindsym $mod+h split h
+bindsym $mod+v split v
+bindsym $mod+Shift+j resize shrink width 20 px
+bindsym $mod+Shift+i resize grow height 20 px
+bindsym $mod+Shift+k resize shrink height 20 px
+bindsym $mod+Shift+l resize grow width 20 px
+bindsym $mod+w layout tabbed
+
+#Monitors
+set $monitor_left DP-0
+set $monitor_right DP-2
+
+##WORKSPACES
+
+#set
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+#bind keys
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+
+#assign to monitors
+workspace $ws1 output $monitor_right
+workspace $ws2 output $monitor_right
+workspace $ws3 output $monitor_right
+workspace $ws4 output $monitor_right
+workspace $ws5 output $monitor_right
+workspace $ws6 output $monitor_left
+workspace $ws7 output $monitor_left
+workspace $ws8 output $monitor_left
+workspace $ws9 output $monitor_left
+workspace $ws10 output $monitor_left
+
+#change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+##others
+bindsym $mod+Shift+r restart
+bindsym Control+Alt+Delete exec sh $HOME/.local/bin/lock
+bindsym $mod+Shift+e exit
+
+##RULES
+for_window[class="feh"] floating toggle
+for_window[class="lxAppearance"] floating toggle
+for_window[class="sxiv"] floating toggle
+assign [class="nvidia-settings"] floating toggle
+for_window [class="chatterino"] floating toggle
+# for_window [class="streamlink-twitch-gui"] tabbed toggle
