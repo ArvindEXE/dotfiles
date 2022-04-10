@@ -18,7 +18,7 @@ default_border none
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id /usr/bin/alternating_layouts.py
-exec_always --no-startup-id redshift -x && redshift
+exec_always --no-startup-id redshift -x && redshift -o 4500
 exec_always --no-startup-id killall dunst; dunst
 exec_always --no-startup-id feh --bg-fill -r -z ~/Pictures/wallpapers
 exec_always --no-startup-id $HOME/.config/polybar/launch2.sh

@@ -199,3 +199,36 @@
 2022/03/08 (13:07:12) | DEBUG: Using locale en_US.UTF-8
 2022/03/08 (13:07:12) | INFO: Running on /dev/pts/0
 2022/03/08 (13:07:12) | DEBUG: Loading theme file: /home/arvind/.config/btop/themes/catppuccin.theme
+
+2022/03/08 (16:25:46) | ===> btop++ v.1.2.5
+2022/03/08 (16:25:46) | INFO: Logger set to DEBUG
+2022/03/08 (16:25:46) | DEBUG: Using locale en_US.UTF-8
+2022/03/08 (16:25:46) | INFO: Running on /dev/pts/0
+2022/03/08 (16:25:46) | DEBUG: Loading theme file: /home/arvind/.config/btop/themes/catppuccin.theme
+2022/03/08 (18:16:01) | DEBUG: Writing new config file
+2022/03/08 (18:16:01) | INFO: Quitting! Runtime: 01:50:15
+
+2022/03/08 (18:16:02) | ===> btop++ v.1.2.5
+2022/03/08 (18:16:02) | INFO: Logger set to DEBUG
+2022/03/08 (18:16:02) | DEBUG: Using locale en_US.UTF-8
+2022/03/08 (18:16:02) | INFO: Running on /dev/pts/0
+2022/03/08 (18:16:02) | DEBUG: Loading theme file: /home/arvind/.config/btop/themes/catppuccin.theme
+2022/03/08 (18:16:33) | INFO: Quitting! Runtime: 00:00:31
+
+2022/03/08 (18:16:35) | ===> btop++ v.1.2.5
+2022/03/08 (18:16:35) | INFO: Logger set to DEBUG
+2022/03/08 (18:16:35) | DEBUG: Using locale en_US.UTF-8
+2022/03/08 (18:16:35) | INFO: Running on /dev/pts/0
+2022/03/08 (18:16:35) | DEBUG: Loading theme file: /home/arvind/.config/btop/themes/paradise.theme
+
+2022/03/20 (15:19:49) | ===> btop++ v.1.2.5
+2022/03/20 (15:19:49) | INFO: Logger set to DEBUG
+2022/03/20 (15:19:49) | DEBUG: Using locale en_US.UTF-8
+2022/03/20 (15:19:49) | INFO: Running on /dev/pts/1
+2022/03/20 (15:19:50) | DEBUG: Loading theme file: /home/arvind/.config/btop/themes/paradise.theme
+
+2022/04/10 (14:14:39) | ===> btop++ v.1.2.5
+2022/04/10 (14:14:39) | INFO: Logger set to DEBUG
+2022/04/10 (14:14:39) | DEBUG: Using locale en_US.UTF-8
+2022/04/10 (14:14:39) | INFO: Running on /dev/pts/0
+2022/04/10 (14:14:39) | DEBUG: Loading theme file: /home/arvind/.config/btop/themes/paradise.theme
